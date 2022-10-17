@@ -282,16 +282,22 @@ section#federation {
 	}
 	.img {
 		padding-right: 40px;
+		flex: 0 0 45%;
 		@media screen and (max-width: 768px) {
 			padding-right: 0 !important;
+		}
+		@media screen and (max-width: 980px) {
+			flex: 0 0 100%;
 		}
 		img {
 			width: 100%;
 		}
 	}
 	.caption {
+		flex: 0 0 55%;
 		@media screen and (max-width: 980px) {
 			margin-top: 40px;
+			flex: 0 0 100%;
 		}
 		h1 {
 			font-size: 36px;
