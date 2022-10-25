@@ -1,0 +1,7 @@
+create dokku user
+append ssh
+create dokku apps
+git remote set-url dokku dokku@194.233.70.165:utm-builder
+ssh-keygen -f dokku_rsa
+cat /root/.ssh/id_rsa.pub | ssh root@194.233.70.165 dokku ssh-keys:add dokku-test
+sudo dokku ssh-keys:add dokku_rsa ./dokku_rsa.pub
