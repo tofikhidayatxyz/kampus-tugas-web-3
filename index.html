@@ -4,11 +4,11 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Tugas S3</title>
+		<title>Tugas S4</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
 			rel="stylesheet"
 		/>
 		<link
@@ -17,13 +17,137 @@
 		/>
 	</head>
 	<body>
-		<section id="hero" class="w:100 bg-blue-400">
+		<header id="header" class="fixed top-0 left-0 w-full py-4">
 			<div class="container">
-				<div class="hero-caption">
-					<div className="flex flex-row w-14 justify-evenly">
-						<div className="w-2 h-6 animate-pulse bg-black"></div>
-						<div className="w-2 h-6 animate-pulse bg-black"></div>
-						<div className="w-2 h-6 animate-pulse bg-black"></div>
+				<div class="flex w-full items-center">
+					<a href="/">
+						<img src="./statics/images/logo-full.svg" class="h-[33px]" alt="" />
+					</a>
+					<div class="flex ml-10 w-full">
+						<nav class="flex items-center w-full">
+							<ul class="mr-auto flex flex-row align-center">
+								<li>
+									<a href="?" class="px-2 font-bold"> Home </a>
+								</li>
+								<li>
+									<a href="?" class="px-2 font-light text-grey"> About </a>
+								</li>
+								<li>
+									<a href="?" class="px-2 font-light text-grey"> Services </a>
+								</li>
+								<li>
+									<a href="?" class="px-2 font-light text-grey"> Our Work </a>
+								</li>
+
+								<li>
+									<a href="?" class="px-2 font-light text-grey"> Blog </a>
+								</li>
+								<li>
+									<a href="?" class="px-2 font-light text-grey"> Resource </a>
+								</li>
+								<li>
+									<a href="?" class="px-2 font-light text-grey"> Contact </a>
+								</li>
+							</ul>
+							<ul class="ml-auto flex items-center">
+								<li class="px-3">
+									<button><i class="bx bx-search text-[24px]"></i></button>
+								</li>
+								<li class="px-3">
+									<button class="btn-round">Get Started</button>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="hero bg-black">
+			<div class="container">
+				<div class="container-hero max-w-7">
+					<h1 class="text-center text-hero">
+						It's Fun To Build a Website With The
+						<span class="text-hero-gradient">Mangcoding Team</span>
+					</h1>
+					<div class="px-5">
+						<p class="text-grey text-center mt-5">
+							The Mangcoding team will help build a website for your company
+							with quality and guaranteed services, with custom templates you
+							can create a website as you like.
+						</p>
+					</div>
+					<div class="flex mt-5 justify-center items-center">
+						<button class="btn-round mx-3">Get Started</button>
+						<a href="?" class="mx-3">
+							<span class="underline">Explore Our Blog</span>
+							<i class="bx bx-right-arrow-alt text-lg"></i>
+						</a>
+					</div>
+					<div class="pt-6">
+						<img src="./statics/images/hero.png" class="hero-image" alt="" />
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="client py-5 mt-7">
+			<div class="container">
+				<h2 class="text-center text-lg text-grey">Brands that trust us</h2>
+				<div class="flex flex-wrap justify-center pt-5">
+					<div class="px-5">
+						<img src="./statics/images/client-1.png" class="h-[40px]" alt="" />
+					</div>
+					<div class="px-5">
+						<img src="./statics/images/client-2.png" class="h-[40px]" alt="" />
+					</div>
+					<div class="px-5">
+						<img src="./statics/images/client-3.png" class="h-[40px]" alt="" />
+					</div>
+					<div class="px-5">
+						<img src="./statics/images/client-4.png" class="h-[40px]" alt="" />
+					</div>
+
+					<div class="px-5">
+						<img src="./statics/images/client-5.png" class="h-[40px]" alt="" />
+					</div>
+					<div class="px-5">
+						<img src="./statics/images/client-6.png" class="h-[40px]" alt="" />
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="service" class="service">
+			<div class="service-container mt-5 py-[80px]">
+				<div class="container">
+					<div class="w-full flex">
+						<div class="mr-auto max-w-[600px]">
+							<h2 class="text-dark text-[30px] font-bold">Services</h2>
+							<p class="text-grey">
+								Lörem ipsum patev antifili astrokålonat. Vanat aheten.
+								Ekofiering makrora, på trekavis. Makrona tregät plang. Bekässade
+								kast, eftersom sore.
+							</p>
+						</div>
+						<div class="ml-auto">
+							<a href="?" class="btn-round"> Build Website </a>
+						</div>
+					</div>
+					<div class="w-full flex mt-6">
+						<div class="w-[66.66%] flex flex-wrap">
+							<div class="flex-[50%]">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Consectetur sunt tempore sapiente culpa, repellendus dicta
+								obcaecati minus animi sequi vitae molestiae possimus est
+								mollitia unde corrupti molestias maiores sit id?
+							</div>
+						</div>
+						<div class="w-[33.33%]">
+							<div class="w-full h-full bg-white p-4 shadow-sm rounded-sm">
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil
+								sint iusto facilis distinctio nostrum enim expedita recusandae,
+								perferendis molestiae debitis pariatur, maxime ex, cupiditate
+								reprehenderit! Cumque aliquam error dolorem ad.
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

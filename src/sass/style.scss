@@ -1,3 +1,67 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+	.container {
+		@apply mx-auto;
+	}
+	.btn-round {
+		@apply bg-primary px-7 py-3 rounded-r-full rounded-l-full text-white;
+	}
+	.hero {
+		padding-top: 200px;
+		overflow: hidden;
+		background: linear-gradient(
+			180deg,
+			#ffffff 0%,
+			#eaf4ff 46.08%,
+			#ffffff 100%
+		);
+	}
+	.container-hero {
+		max-width: 800px;
+		@apply mx-auto;
+	}
+	.text-hero {
+		@apply font-extrabold;
+		font-size: 55px;
+		line-height: 60px;
+	}
+	.text-hero-gradient {
+		background: linear-gradient(
+			90.01deg,
+			#e18700 35.24%,
+			#ff32ad 66.21%,
+			#0ec5d7 97.18%
+		);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		text-fill-color: transparent;
+	}
+	.shadow-sm {
+		box-shadow: 0px 94px 80px rgba(0, 0, 0, 0.02),
+			0px 39.271px 33.4221px rgba(0, 0, 0, 0.0143771),
+			0px 20.9961px 17.869px rgba(0, 0, 0, 0.0119221),
+			0px 11.7703px 10.0172px rgba(0, 0, 0, 0.01),
+			0px 6.2511px 5.32008px rgba(0, 0, 0, 0.00807786),
+			0px 2.60122px 2.21381px rgba(0, 0, 0, 0.00562291);
+	}
+}
+
+.hero-image {
+	box-shadow: 0 0 20px 0px rgba($color: #000000, $alpha: 0.1);
+}
+
+.service {
+	background-image: url(../../statics/images/polkadot.svg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.service-container {
+	background: rgba(255, 255, 255, 0.01);
+	backdrop-filter: blur(150px);
+}

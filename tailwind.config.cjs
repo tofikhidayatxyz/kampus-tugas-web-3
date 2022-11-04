@@ -4,7 +4,15 @@ module.exports = {
 	purge: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
 	darkMode: false,
 	theme: {
-		extend: {},
+		fontFamily: {
+			sans: ['Raleway, sans-serif'],
+		},
+		extend: {
+			colors: {
+				grey: '#969696',
+				primary: '#0EC5D7',
+			},
+		},
 	},
 	variants: {
 		extend: {},
